@@ -1,0 +1,59 @@
+{
+"questions": [
+{
+"question": "What is the purpose of the 'git init' command?",
+"options": [
+"A distributed version control system",
+"To create a hidden .git directory",
+"To track changes in files and manage versions",
+"To initialize a repository"
+],
+"answer": "To initialize a repository",
+"explanation": "The 'git init' command creates a hidden .git directory, which stores the project's history, branches, configurations, and commits."
+},
+{
+"question": "What is the staging area in Git?",
+"options": [
+"The location where files are edited",
+"The place where changes are prepared for the next commit",
+"A snapshot of our project at this moment",
+"The first step to track changes in files"
+],
+"answer": "The place where changes are prepared for the next commit",
+"explanation": "The staging area is where preparation is done before committing changes. The 'git add' command stages a file to be committed."
+},
+{
+"question": "What does the 'git log --online' command do?",
+"options": [
+"It shows the history of commits in reverse chronological order",
+"It creates a new folder for the project",
+"It tracks changes in files and manage versions",
+"It displays the current status of the repository"
+],
+"answer": "It shows the history of commits in reverse chronological order",
+"explanation": "The 'git log --online' command is used to view the commit history."
+},
+{
+"question": "What is the purpose of the 'clear' command?",
+"options": [
+"It clears the terminal screen",
+"It creates a new folder for the project",
+"It tracks changes in files and manage versions",
+"It displays the current status of the repository"
+],
+"answer": "It clears the terminal screen",
+"explanation": "The 'clear' command is used to clear everything on the screen."
+},
+{
+"question": "What does the 'git push' command do?",
+"options": [
+"It pulls changes from the remote repository",
+"It pushes changes to the remote repository",
+"It tracks changes in files and manage versions",
+"It displays the current status of the repository"
+],
+"answer": "It pushes changes to the remote repository",
+"explanation": "The 'git push' command is used to push local commits to a remote repository, such as GitHub."
+}
+]
+}
