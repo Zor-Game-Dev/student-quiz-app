@@ -9,51 +9,49 @@
 "To initialize a repository"
 ],
 "answer": "To initialize a repository",
-"explanation": "The 'git init' command creates a hidden .git directory, which stores the project's history, branches, configurations, and commits."
+"explanation": "The 'git init' command creates a hidden .git directory, which is the starting point for tracking changes in files and managing versions."
 },
 {
-"question": "What is the staging area in Git?",
+"question": "What are the three areas where Git works?",
 "options": [
-"The location where files are edited",
-"The place where changes are prepared for the next commit",
-"A snapshot of our project at this moment",
-"The first step to track changes in files"
+"The Working Directory, Staging Area, and Commit History",
+"The Local Machine, GitHub, and Repository",
+"The Command Line, Editor, and Browser",
+"The File System, Database, and Network"
 ],
-"answer": "The place where changes are prepared for the next commit",
-"explanation": "The staging area is where preparation is done before committing changes. The 'git add' command stages a file to be committed."
+"answer": "The Working Directory, Staging Area, and Commit History",
+"explanation": "Git works in three areas: the Working Directory (where we create and edit files), the Staging Area (where preparation is done for the next commit), and the Commit History (a record of all previous commits)."
 },
 {
-"question": "What does the 'git log --online' command do?",
+"question": "What is the purpose of the 'git add' command?",
 "options": [
-"It shows the history of commits in reverse chronological order",
-"It creates a new folder for the project",
-"It tracks changes in files and manage versions",
-"It displays the current status of the repository"
+"To commit changes to a file",
+"To stage a file for the next commit",
+"To view the history of commits",
+"To clear the screen"
 ],
-"answer": "It shows the history of commits in reverse chronological order",
-"explanation": "The 'git log --online' command is used to view the commit history."
+"answer": "To stage a file for the next commit",
+"explanation": "The 'git add' command stages a file for the next commit, preparing the changes for the next snapshot."
 },
 {
-"question": "What is the purpose of the 'clear' command?",
+"question": "What is the purpose of the 'git log --online' command?",
 "options": [
-"It clears the terminal screen",
-"It creates a new folder for the project",
-"It tracks changes in files and manage versions",
-"It displays the current status of the repository"
+"To view the history of commits",
+"To stage a file for the next commit",
+"To clear the screen",
+"To initialize a repository"
 ],
-"answer": "It clears the terminal screen",
-"explanation": "The 'clear' command is used to clear everything on the screen."
+"answer": "To view the history of commits",
+"explanation": "The 'git log --online' command displays the history of all previous commits, showing the changes made to the project over time."
 },
 {
-"question": "What does the 'git push' command do?",
+"question": "What is the purpose of the 'git push' command?",
 "options": [
-"It pulls changes from the remote repository",
-"It pushes changes to the remote repository",
-"It tracks changes in files and manage versions",
-"It displays the current status of the repository"
+"To pull changes from GitHub",
+"To view the history of commits",
+"To stage a file for the next commit",
+"To push changes to GitHub"
 ],
-"answer": "It pushes changes to the remote repository",
-"explanation": "The 'git push' command is used to push local commits to a remote repository, such as GitHub."
-}
-]
+"answer": "To push changes to GitHub",
+"explanation": "The 'git push' command sends the local repository's changes to the remote repository on GitHub, making them available to others."
 }

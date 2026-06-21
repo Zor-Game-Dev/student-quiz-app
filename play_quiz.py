@@ -13,17 +13,20 @@ for index, question in enumerate(data["questions"], start=1):
     for i, option in enumerate(options):
         print(f"{chr(65 + i)}. {option}")
 
-    user_answer = input("Enter your answer A/B/C/D: ").strip().upper()
+    while True:
+        user_answer = input("Enter your answer A/B/C/D: ").strip().upper()
 
-    if len(user_answer) != 1 or user_answer not in ["A", "B", "C", "D"]:
-    print("Please enter A, B, C, or D")
-    continue
+        if len(user_answer) != 1 or user_answer not in ["A", "B", "C", "D"]:
+            print("Please enter A, B, C, or D")
+            continue
 
-    option_index = ord(user_answer) - 65
+        option_index = ord(user_answer) - 65
 
-    if option_index < 0 or option_index >= len(options):
-        print("Invalid option.")
-        continue
+        if option_index < 0 or option_index >= len(options):
+            print("Invalid option.")
+            continue
+
+        break
 
     selected_option = options[option_index]
 

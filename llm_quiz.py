@@ -2,6 +2,15 @@ import fitz
 import requests
 import json
 
+def extract_json(text):
+    start = text.find("{")
+    end = text.rfind("}")
+
+    if start == -1 or end == -1:
+        raise ValueError("No JSON object found in model response")
+
+    return text[start:end + 1]
+
 pdf = fitz.open("sample.pdf")
 
 full_text = ""
@@ -56,7 +65,7 @@ Notes:
 response = requests.post(
     "http://localhost:11434/api/generate",
     json={
-        "model": "llama3:8b",
+        "model": "llama3:8b",   
         "prompt": prompt,
         "stream": False,
         "options": {
@@ -67,7 +76,9 @@ response = requests.post(
 
 result = response.json()
 
+clean_json = extract_json(result["response"])
+
 with open("quiz.json", "w", encoding="utf-8") as f:
-    f.write(result["response"])
+    f.write(clean_json)
 
 print("Quiz saved to quiz.json")
