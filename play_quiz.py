@@ -14,7 +14,11 @@ for index, question in enumerate(data["questions"], start=1):
         print(f"{chr(65 + i)}. {option}")
 
     while True:
-        user_answer = input("Enter your answer A/B/C/D: ").strip().upper()
+        user_answer = input("Enter your answer A/B/C/D: (or Q to quit): ").strip().upper()
+
+        if user_answer == "Q":
+            print("Quiz exited by user.")
+            break   
 
         if len(user_answer) != 1 or user_answer not in ["A", "B", "C", "D"]:
             print("Please enter A, B, C, or D")
