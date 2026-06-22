@@ -1,59 +1,64 @@
 {
-"questions": [
-{
-"question": "What is the purpose of the 'git init' command?",
-"options": [
-"Creates a hidden .git directory",
-"Tracks changes in files and manages versions",
-"Initializes a new repository",
-"Commits changes to the local machine"
-],
-"answer": "Creates a hidden .git directory",
-"explanation": "The 'git init' command is used to initialize a new Git repository."
-},
-{
-"question": "What are the three areas where Git works?",
-"options": [
-"The Working Directory, Staging Area, and Commit History",
-"The Local Machine, GitHub, and VSCode",
-"The Repository, Branches, and Commits",
-"The File System, Database, and Network"
-],
-"answer": "The Working Directory, Staging Area, and Commit History",
-"explanation": "Git works in three areas: the Working Directory (where files are created and edited), the Staging Area (where changes are prepared for commit), and the Commit History (a record of all previous commits)."
-},
-{
-"question": "What is the purpose of the 'git add' command?",
-"options": [
-"Commits changes to the local machine",
-"Tracks changes in files and manages versions",
-"Prepares changes for the next commit",
-"Deletes a file from the repository"
-],
-"answer": "Prepares changes for the next commit",
-"explanation": "The 'git add' command stages a file, preparing it for the next commit."
-},
-{
-"question": "What is the purpose of the 'git log --online' command?",
-"options": [
-"Views the history of commits",
-"Tracks changes in files and manages versions",
-"Initializes a new repository",
-"Commits changes to the local machine"
-],
-"answer": "Views the history of commits",
-"explanation": "The 'git log --online' command is used to view the history of previous commits."
-},
-{
-"question": "What is the purpose of the 'git push' command?",
-"options": [
-"Pulls changes from GitHub",
-"Tracks changes in files and manages versions",
-"Pushes changes to GitHub",
-"Commits changes to the local machine"
-],
-"answer": "Pushes changes to GitHub",
-"explanation": "The 'git push' command is used to push changes from a local repository to a remote repository, such as GitHub."
-}
-]
+    "questions": [
+        {
+            "question": "What command is used to make a commit in Git?",
+            "options": [
+                "git init",
+                "echo 'String to give comment' > app.txt",
+                "git add app.txt",
+                "git commit -m"
+            ],
+            "answer": "git commit -m",
+            "explanation": "This creates a snapshot of the project at this moment.",
+            "id": 8
+        },
+        {
+            "question": "How do you stage a file in Git?",
+            "options": [
+                "git init",
+                "echo 'String to give comment' > app.txt",
+                "git add app.txt",
+                "git commit -m"
+            ],
+            "answer": "git add app.txt",
+            "explanation": "This prepares the changes for the next commit.",
+            "id": 7
+        },
+        {
+            "question": "How do you view the history of commits?",
+            "options": [
+                "git init",
+                "echo 'String to give comment' > app.txt",
+                "git log --online",
+                "git add app.txt"
+            ],
+            "answer": "git log --online",
+            "explanation": "This shows the history of all commits.",
+            "id": 10
+        },
+        {
+            "question": "What command is used to initialize a Git repository?",
+            "options": [
+                "git init",
+                "git add",
+                "git commit",
+                "git log"
+            ],
+            "answer": "git init",
+            "explanation": "This creates a hidden .git directory.",
+            "id": 2
+        },
+        {
+            "question": "What is a Commit in Git?",
+            "options": [
+                "A snapshot of our project at this moment",
+                "The first version of our file",
+                "A way to track changes in files",
+                "A type of database management system"
+            ],
+            "answer": "A snapshot of our project at this moment",
+            "explanation": "A commit is the first snapshot that is why it says initial commit.",
+            "id": 9
+        }
+    ]
 }
