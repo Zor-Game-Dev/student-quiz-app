@@ -21,7 +21,7 @@ for page in pdf:
 notes = full_text[:3000]
 
 prompt = f"""
-Generate exactly 5 MCQ questions from the notes.
+Generate exactly 10 MCQ questions from the notes.
 
 STRICT RULES:
 - Do NOT use A, B, C, D as option values.
@@ -78,7 +78,7 @@ result = response.json()
 
 clean_json = extract_json(result["response"])
 
-with open("quiz.json", "w", encoding="utf-8") as f:
+with open("question_bank.json", "w", encoding="utf-8") as f:
     f.write(clean_json)
 
-print("Quiz saved to quiz.json")
+print("Question bank saved to question_bank.json")
