@@ -18,7 +18,15 @@ for q in all_questions:
 
 if len(available_questions) < 5:
     print("Not enough unused questions.")
-    exit()
+    reset_choice = input("All questions have been used. Reset used questions? Y/N: ").strip().upper()
+
+    if reset_choice == "Y":
+        used_ids = []
+        available_questions = all_questions
+        print("Used questions reset.")
+    else:
+        print("Quiz creation cancelled.")
+        exit()
 
 selected_questions = random.sample(available_questions, 5)
 

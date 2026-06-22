@@ -1,16 +1,16 @@
 {
     "questions": [
         {
-            "question": "What command is used to make a commit in Git?",
+            "question": "What command is used to check the status?",
             "options": [
                 "git init",
-                "echo 'String to give comment' > app.txt",
                 "git add app.txt",
-                "git commit -m"
+                "git commit -m",
+                "git status"
             ],
-            "answer": "git commit -m",
-            "explanation": "This creates a snapshot of the project at this moment.",
-            "id": 8
+            "answer": "git status",
+            "explanation": "This shows whether Git can see the file app.txt.",
+            "id": 6
         },
         {
             "question": "How do you stage a file in Git?",
@@ -25,16 +25,28 @@
             "id": 7
         },
         {
-            "question": "How do you view the history of commits?",
+            "question": "What is Git?",
+            "options": [
+                "A distributed version control system",
+                "A database management system",
+                "A programming language",
+                "A web browser"
+            ],
+            "answer": "A distributed version control system",
+            "explanation": "Git is used to track changes in files and manage versions.",
+            "id": 1
+        },
+        {
+            "question": "What command is used to clear the screen?",
             "options": [
                 "git init",
-                "echo 'String to give comment' > app.txt",
-                "git log --online",
-                "git add app.txt"
+                "clear",
+                "git add app.txt",
+                "git commit -m"
             ],
-            "answer": "git log --online",
-            "explanation": "This shows the history of all commits.",
-            "id": 10
+            "answer": "clear",
+            "explanation": "This command clears everything on the screen.",
+            "id": 4
         },
         {
             "question": "What command is used to initialize a Git repository?",
@@ -47,18 +59,6 @@
             "answer": "git init",
             "explanation": "This creates a hidden .git directory.",
             "id": 2
-        },
-        {
-            "question": "What is a Commit in Git?",
-            "options": [
-                "A snapshot of our project at this moment",
-                "The first version of our file",
-                "A way to track changes in files",
-                "A type of database management system"
-            ],
-            "answer": "A snapshot of our project at this moment",
-            "explanation": "A commit is the first snapshot that is why it says initial commit.",
-            "id": 9
         }
     ]
 }
