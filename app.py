@@ -5,7 +5,8 @@ def show_menu():
     print("1. Generate Quiz from PDF")
     print("2. Validate Quiz")
     print("3. Take Quiz")
-    print("4. Exit")
+    print("4. Show Previous Scores")
+    print("5. Exit")
 
 while True:
     show_menu()
@@ -25,8 +26,13 @@ while True:
         os.system("python play_quiz.py")
 
     elif choice == "4":
-        print("Exiting app.")
+        print("\nShowing previous scores...")
+        os.system("python show_scores.py")
         break
 
+    elif choice == "5":
+        print("Exiting app.")
+        break
+        
     else:
         print("Invalid choice. Enter 1, 2, 3, or 4.")
