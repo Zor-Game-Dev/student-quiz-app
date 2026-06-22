@@ -43,18 +43,27 @@ for index, question in enumerate(data["questions"], start=1):
         print("Correct answer:", question["answer"])
         print("Explanation:", question["explanation"])
 
-    with open("wrong_answers.json", "r", encoding="utf-8") as f:
-        wrong_data = json.load(f)
+        with open("wrong_answers.json", "r", encoding="utf-8") as f:
+            wrong_data = json.load(f)
 
-    wrong_data["wrong_questions"].append({
-        "question": question["question"],
-        "answer": question["answer"],
-        "explanation": question["explanation"]
-    })
+        already_exists = False
+
+        for wrong_question in wrong_data["wrong_questions"]:
+            if wrong_question["question"] == question["question"]:
+                already_exists = True
+                break
+
+        if not already_exists:
+            wrong_data["wrong_questions"].append({
+                "question": question["question"],
+                "options": question["options"],
+                "answer": question["answer"],
+                "explanation": question["explanation"]
+        })
 
     with open("wrong_answers.json", "w", encoding="utf-8") as f:
         json.dump(wrong_data, f, indent=4)
-
+        
 total_questions = len(data["questions"])
 
 print(f"\nFinal Score: {score}/{total_questions}")

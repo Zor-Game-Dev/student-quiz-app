@@ -7,7 +7,8 @@ def show_menu():
     print("3. Take Quiz")
     print("4. Show Previous Scores")
     print("5. Show Wrong Answers")
-    print("6. Exit")
+    print("6. Revision Quiz")
+    print("7. Exit")
 
 while True:
     show_menu()
@@ -36,6 +37,10 @@ while True:
         os.system("python show_wrong_answers.py")
 
     elif choice == "6":
+        print("\nStarting revision quiz...")
+        os.system("python revision_quiz.py")
+
+    elif choice == "7":
         print("Exiting app.")
         break
 

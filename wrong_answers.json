@@ -1,29 +1,3 @@
 {
-    "wrong_questions": [
-        {
-            "question": "What is the purpose of the 'git init' command?",
-            "answer": "Creates a hidden .git directory",
-            "explanation": "The 'git init' command is used to initialize a new Git repository."
-        },
-        {
-            "question": "What are the three areas where Git works?",
-            "answer": "The Working Directory, Staging Area, and Commit History",
-            "explanation": "Git works in three areas: the Working Directory (where files are created and edited), the Staging Area (where changes are prepared for commit), and the Commit History (a record of all previous commits)."
-        },
-        {
-            "question": "What is the purpose of the 'git add' command?",
-            "answer": "Prepares changes for the next commit",
-            "explanation": "The 'git add' command stages a file, preparing it for the next commit."
-        },
-        {
-            "question": "What is the purpose of the 'git log --online' command?",
-            "answer": "Views the history of commits",
-            "explanation": "The 'git log --online' command is used to view the history of previous commits."
-        },
-        {
-            "question": "What is the purpose of the 'git push' command?",
-            "answer": "Pushes changes to GitHub",
-            "explanation": "The 'git push' command is used to push changes from a local repository to a remote repository, such as GitHub."
-        }
-    ]
+    "wrong_questions": []
 }
