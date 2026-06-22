@@ -1,4 +1,5 @@
 import json
+from datetime import datetime
 
 with open("quiz.json", "r", encoding="utf-8") as f:
     data = json.load(f)
@@ -42,4 +43,20 @@ for index, question in enumerate(data["questions"], start=1):
         print("Correct answer:", question["answer"])
         print("Explanation:", question["explanation"])
 
-print(f"\nFinal Score: {score}/{len(data['questions'])}")
+total_questions = len(data["questions"])
+
+print(f"\nFinal Score: {score}/{total_questions}")
+
+with open("scores.json", "r", encoding="utf-8") as f:
+    scores_data = json.load(f)
+
+scores_data["attempts"].append({
+    "date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+    "score": score,
+    "total": total_questions
+})
+
+with open("scores.json", "w", encoding="utf-8") as f:
+    json.dump(scores_data, f, indent=4)
+
+print("Score saved successfully.")
