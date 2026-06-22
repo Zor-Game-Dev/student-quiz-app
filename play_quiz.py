@@ -19,7 +19,7 @@ for index, question in enumerate(data["questions"], start=1):
 
         if user_answer == "Q":
             print("Quiz exited by user.")
-            break   
+            exit()   
 
         if len(user_answer) != 1 or user_answer not in ["A", "B", "C", "D"]:
             print("Please enter A, B, C, or D")
@@ -42,6 +42,18 @@ for index, question in enumerate(data["questions"], start=1):
         print("Wrong!")
         print("Correct answer:", question["answer"])
         print("Explanation:", question["explanation"])
+
+    with open("wrong_answers.json", "r", encoding="utf-8") as f:
+        wrong_data = json.load(f)
+
+    wrong_data["wrong_questions"].append({
+        "question": question["question"],
+        "answer": question["answer"],
+        "explanation": question["explanation"]
+    })
+
+    with open("wrong_answers.json", "w", encoding="utf-8") as f:
+        json.dump(wrong_data, f, indent=4)
 
 total_questions = len(data["questions"])
 
