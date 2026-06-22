@@ -3,121 +3,121 @@
         {
             "question": "What is Git?",
             "options": [
-                "A distributed version control system",
-                "A database management system",
-                "A programming language",
-                "A web browser"
+                "A version control system that tracks changes in files",
+                "A database management system for storing data",
+                "A programming language for writing code",
+                "A web browser for accessing websites"
             ],
-            "answer": "A distributed version control system",
+            "answer": "A version control system that tracks changes in files",
             "explanation": "Git is used to track changes in files and manage versions.",
             "id": 1
         },
         {
             "question": "What command is used to initialize a Git repository?",
             "options": [
+                "git status",
                 "git init",
-                "git add",
-                "git commit",
-                "git log"
+                "git commit -m 'String'",
+                "git log --online"
             ],
             "answer": "git init",
-            "explanation": "This creates a hidden .git directory.",
+            "explanation": "This creates a hidden .git directory that stores, commits, history, branches and configurations.",
             "id": 2
         },
         {
-            "question": "What happens if the folder containing the Git repository gets deleted?",
+            "question": "What is the purpose of the '.git' directory?",
             "options": [
-                "The entire project history is gone",
-                "The file app.txt remains intact",
-                "The commit history remains unchanged",
-                "The staging area is cleared"
+                "To store file names",
+                "To track changes in files",
+                "To manage versions",
+                "To clear the screen"
             ],
-            "answer": "The entire project history is gone",
-            "explanation": "This means that all commits, branches, and configurations are lost.",
+            "answer": "To track changes in files",
+            "explanation": "The .git directory stores, commits, history, branches and configurations.",
             "id": 3
         },
         {
-            "question": "What command is used to clear the screen?",
+            "question": "What is the 'Working Directory'?",
             "options": [
-                "git init",
-                "clear",
-                "git add app.txt",
-                "git commit -m"
+                "The area where Git prepares changes for commit",
+                "This is where we create and edit our files",
+                "A snapshot of our project at a moment",
+                "The area where we stage files"
             ],
-            "answer": "clear",
-            "explanation": "This command clears everything on the screen.",
+            "answer": "This is where we create and edit our files",
+            "explanation": "The Working Directory means this is were we create and edit our files.",
             "id": 4
         },
         {
-            "question": "How do you create a simple file in Git?",
+            "question": "What command stages the file for commit?",
             "options": [
-                "echo 'String to give comment' > app.txt",
-                "git init",
+                "git status",
                 "git add app.txt",
-                "git commit -m"
+                "git log --online",
+                "git push"
             ],
-            "answer": "echo 'String to give comment' > app.txt",
-            "explanation": "This is the name of your file (app).",
+            "answer": "git add app.txt",
+            "explanation": "The git add command just stages the file to commit but it does not create a commit.",
             "id": 5
         },
         {
-            "question": "What command is used to check the status?",
+            "question": "What is the purpose of the 'Staging Area'?",
             "options": [
-                "git init",
-                "git add app.txt",
-                "git commit -m",
-                "git status"
+                "To store file names",
+                "This is where preparation is done",
+                "A snapshot of our project at a moment",
+                "The area where we stage files"
             ],
-            "answer": "git status",
-            "explanation": "This shows whether Git can see the file app.txt.",
+            "answer": "This is where preparation is done",
+            "explanation": "The Staging Area this is where preparation is done.",
             "id": 6
         },
         {
-            "question": "How do you stage a file in Git?",
+            "question": "What command commits the changes?",
             "options": [
-                "git init",
-                "echo 'String to give comment' > app.txt",
+                "git status",
                 "git add app.txt",
-                "git commit -m"
+                "git commit -m 'String'",
+                "git log --online"
             ],
-            "answer": "git add app.txt",
-            "explanation": "This prepares the changes for the next commit.",
+            "answer": "git commit -m 'String'",
+            "explanation": "The git commit command creates a snapshot of our project at this moment.",
             "id": 7
         },
         {
-            "question": "What command is used to make a commit in Git?",
+            "question": "What is the purpose of the 'Commit History'?",
             "options": [
-                "git init",
-                "echo 'String to give comment' > app.txt",
-                "git add app.txt",
-                "git commit -m"
+                "To store file names",
+                "A snapshot of our project at a moment",
+                "This is where we stage files",
+                "The area where we create and edit our files"
             ],
-            "answer": "git commit -m",
-            "explanation": "This creates a snapshot of the project at this moment.",
+            "answer": "A snapshot of our project at a moment",
+            "explanation": "The Commit History means this is the first snapshot that is why it says initial commit.",
             "id": 8
         },
         {
-            "question": "What is a Commit in Git?",
+            "question": "What command pushes the changes to GitHub?",
             "options": [
-                "A snapshot of our project at this moment",
-                "The first version of our file",
-                "A way to track changes in files",
-                "A type of database management system"
+                "git status",
+                "git add app.txt",
+                "git push",
+                "git log --online"
             ],
-            "answer": "A snapshot of our project at this moment",
-            "explanation": "A commit is the first snapshot that is why it says initial commit.",
+            "answer": "git push",
+            "explanation": "The git push command pushes the changes to GitHub.",
             "id": 9
         },
         {
-            "question": "How do you view the history of commits?",
+            "question": "Where can you view the file that has been pushed to GitHub?",
             "options": [
-                "git init",
-                "echo 'String to give comment' > app.txt",
-                "git log --online",
-                "git add app.txt"
+                "In the local machine",
+                "On the internet in your github profile",
+                "In the 'Working Directory'",
+                "In the 'Staging Area'"
             ],
-            "answer": "git log --online",
-            "explanation": "This shows the history of all commits.",
+            "answer": "On the internet in your github profile",
+            "explanation": "You can view the file that has been pushed to GitHub by going to your github profile.",
             "id": 10
         }
     ]

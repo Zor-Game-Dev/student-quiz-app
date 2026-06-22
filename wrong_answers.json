@@ -1,3 +1,15 @@
 {
-    "wrong_questions": []
+    "wrong_questions": [
+        {
+            "question": "What is the 'Working Directory'?",
+            "options": [
+                "The area where Git prepares changes for commit",
+                "This is where we create and edit our files",
+                "A snapshot of our project at a moment",
+                "The area where we stage files"
+            ],
+            "answer": "This is where we create and edit our files",
+            "explanation": "The Working Directory means this is were we create and edit our files."
+        }
+    ]
 }
